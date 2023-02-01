@@ -20,7 +20,7 @@ function Home() {
 
 
   useEffect(() => {
-    fetch('https://my-moviez-back.vercel.app/movies')
+    fetch('https://my-moviez-back.vercel.app/movies/')
       .then(response => response.json())
       .then(data => {
         const formatedData = data.movies.map(movie => {
